@@ -79,6 +79,12 @@ body{
     cursor: pointer;
 }
 
+#menu-icon{
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none;
+}
+
 section{
     min-height: 100vh;
     padding: 10rem 7% 2rem;   
@@ -484,4 +490,68 @@ span{
 .footer-iconTop a i {
     font-size: 2.4rem;
     color:#333;
+}
+
+/*BREAKPOINTS*/
+
+@media (max-width: 1200px) {
+
+    html{
+        font-size: 55%;
+
+    }
+
+    .home .profession_container .profession_box {
+        right: -12rem;
+        height: 85.8rem;
+    }
+    
+    .home .profession_container .overlay{
+        right: -9rem;
+    }
+}
+
+@media (max-width: 1024px) {
+
+        .header{
+            padding: 2rem 3%;
+        }
+
+        section{
+           padding: 10rem 3% 2rem; 
+        }
+
+        .home .profession_container .portfolio_box {
+
+            right: -22rem;
+        }
+
+        .home .profession_container .overlay{
+            right: -15rem;
+        }
+    }
+
+@media (max-width: 991px) {
+
+    .nav_bar a:nth-child(1),
+    .nav_bar a:nth-child(2){
+        color: var(--main-color)
+    }
+
+    .home .home-content{
+        max-width: -50rem;
+    }
+
+    .home .profession_container .profession_box {
+
+        right: -45rem;
+    }
+
+    .home .profession_container .overlay{
+        right: -39.5rem;
+    }
+
+    .home_img img{
+        display: none;
+    }
 }
